@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Elkady Shopping</a>
+                <div class="srv" 
+                style="display: flex;
+                justify-content: space-between;
+                width: 30%;">
+                    <a class="fav" href="favourite.html" >Favourite</a>
+                    <a class="fav" href="myproducts.html" >My Products</a>
+                    <a class="fav" href="profile.html" >My Profile</a>
+                </div>
+                <div class="shopping-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge">0</span>
+                    <div class="cart-product">
+                        <div class="pros"></div>
+                        <a href="cart.html" class="">Viex all Products</a>
+                    </div>
+                </div>
+                <nav id="links">
+                    <a href="register.html" >SignUP</a>
+                    <a href="login.html">SignIN</a>
+                </nav>
+                <nav id="user-info">
+                    <ul>
+                        <li>
+                            <a class="user-name" href="profile.html" ></a>
+                        </li>
+                        <li>
+                        </li>
+                        <li>
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge">0</span>
+                            
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+            <section class="home">
+                <div class="container profile">
+                    <img src="my_photo.jpg" class="user-avatar" alt="">
+                    <h2 id="userName"></h2>
+                    <p id="email" class="mail"></p>
+                    <p id="product-length" class="length">Product Length : <span></span></p>
+                    <a href="editprofile.html" class="">Edit Prodile</a>
+                <a class="add-product-icon" href="Createproduct.html"><i class="fa fa-plus"></i></a>
+            </section>
+        </div>
+        <script src="js/user.js"></script>
+        <script src="js/data.js"></script>
+        <script src="js/profile.js"></script>
+
+</body>
+</html>

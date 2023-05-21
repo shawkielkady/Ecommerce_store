@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    padding: 10px 0;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content .logo{
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+}
+.shopping-cart{
+    color: white;
+    margin-left: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.shopping-cart span{
+    position: absolute;
+    background-color: crimson;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 1px 0;
+    top: 7px;
+    margin-left: -9px;
+    display: none;
+}
+.cart-product{
+    position: absolute;
+    top: 60px;
+    color: black;
+    background-color: #eaeaea;
+    padding: 10px;
+    border: 1px solid;
+    transform: translateX(-20px);
+    width: 200px;
+    line-height: 2.2;
+    display: none;
+}
+.cart-product a{
+    color: black;
+    display: block;
+    width: 100%;
+    background-color: #a9a6a6;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+.header-content nav a{
+    color: white;
+    font-size: 20px;
+    margin-right: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.header-content nav a:hover{
+    color: rgb(232, 232, 5);
+    text-decoration: underline;
+    font-size: 25px;
+    transform: scale(1.2);
+}
+.section-form{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60%;
+    text-align: center;
+    background-color: #eee;
+    padding: 20px;
+    overflow: hidden;
+}
+.section-form h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+.section-form form input{
+display: block;
+width: 100%;
+padding: 5px;
+margin-top: 5px;
+height: 40px;
+border: 1px solid #ddd;
+outline: none;
+}
+.section-form form input[type=submit]{
+cursor: pointer;
+text-transform: uppercase;
+transition: 0.3s;
+height: auto;
+}
+.section-form form input[type=submit]:hover{
+    opacity: 0.8;
+    color: white;
+    transform: scale(1.2);
+}
+#user-info {
+    display: none;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/*********products**********/
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.products {
+    margin: 10px 0;
+    width: 70%;
+   
+}
+.products .product{
+    display: flex;
+    width: 80%;
+    border: 1px solid #eee;
+    margin:10px 0;
+    justify-content: space-between;
+
+}
+.product img{
+    width: 25%;
+    margin-right: 10px;
+
+}
+/**/
+    .product .product-info{
+        position: relative;
+    }
+.product .product-info a{
+    display: block;
+    color: #333;
+    font-size: 30px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.product .product-actions{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.product .product-actions button{
+    display: block;
+    cursor: pointer;
+    padding: 10px 5px;
+    background-color: beige;
+}
+.product-actions i{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    cursor: pointer;
+}
+.product-actions i:hover{
+   color: red;
+}
+.item-product{
+    width: 100%;
+    margin: 10px auto;
+}
+.item-product img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+#search-input{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+    padding: 10px;
+
+}
+#search-input:focus{
+transform: scale(1.1);
+color: black;
+background-color: #ddd;
+}
+.fav{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    left: 30px;
+}
+.add-product-icon{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: #a9a6a6;
+    color: white;
+    border-radius: 50%;
+    line-height: 50px;
+    border-radius: 50%;
+    bottom: 35px;
+     right: 35px;
+}
+.add-product-icon:hover{
+    opacity: 0.8;
+    color: black;
+}
+.filter{
+    width: 25%;
+    margin: 10px 0;
+}
+.filter #size-filter{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+}
+.filter #size-filter option{
+    font-size: 20px;
+}
+.user-avatar{
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+.profile{
+    font-size: 25px;
+    line-height: 2;
+}
+
+
+
+
